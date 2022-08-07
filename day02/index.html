@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const name = prompt("Qual o seu nome?  ლ(╹◡╹ლ) ");
+      const age = prompt("Quantos anos você tem? (✿◠‿◠) ");
+      const language = prompt(
+        "Qual linguaguem de programação você está estudado ? (⊙_⊙)？"
+      );
+
+      alert(
+        `Olá ${name}, você tem ${age} anos e já está aprendendo ${language} (ﾉ*･ω･)ﾉ`
+      );
+
+      const likeCode = prompt(`Você gosta de estudar ${language}? ಠಿ_ಠ`);
+
+      const answers = {
+        sim: "Muito bom! Continue estudando e você terá muito sucesso. ( •̀ ω •́ )✧",
+        nao: "Ahh que pena... Já tentou aprender outras linguagens? ⊙﹏⊙∥",
+        default: "Não consigo saber se você disse sim ou não (⊙_⊙)?",
+      };
+
+      alert(answers[likeCode.toLowerCase()] || answers.default);
+    </script>
+  </body>
+</html>
